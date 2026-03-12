@@ -2,12 +2,6 @@
 
 > **AI 招聘决策分析师** — 将简历、面试记录和候选人数据转化为结构化、可执行的洞察
 
-[![状态](https://img.shields.io/badge/状态 - 运行中-success)](.)
-[![平台](https://img.shields.io/badge/平台 - 飞书-blue)](.)
-[![模型](https://img.shields.io/badge/模型 - 通义千问 3.5--plus-orange)](.)
-[![许可](https://img.shields.io/badge/许可 - 内部使用-lightgrey)](.)
-
----
 
 ## 🚀 快速开始
 
@@ -125,7 +119,6 @@ hr-analyst/
 ├── SKILL.md                 # 技能操作规范
 ├── README.md                # 用户使用指南
 ├── feishu-integration.md    # 飞书集成详情
-├── GITHUB_README.md         # 项目展示文档
 ├── candidates/              # 候选人档案
 │   └── [姓名]_[日期].md
 ├── jobs/                    # 岗位 JD
@@ -301,18 +294,4 @@ HR Analyst:
 - ✅ 通过飞书权限系统控制访问
 - ✅ Gateway 基于 Token 的身份认证
 
----
 
-## 🤝 贡献指南
-
-本项目为内部工具。如有问题或功能需求，请联系开发团队。
-
----
-
-## 📝 许可
-
-内部使用，禁止外传。
-
----
-
-**Built with ❤️ by OpenClaw**
