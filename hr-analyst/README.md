@@ -2,8 +2,6 @@
 
 ## 快速开始
 
-<img width="1185" height="1277" alt="屏幕截图 2026-03-12 091557" src="https://github.com/user-attachments/assets/e7c7ee1d-24d2-4177-8e87-abb1a3601a43" />
-
 这是一个专门支持招聘决策的 AI 分析师系统。
 
 ### 核心功能
@@ -156,12 +154,6 @@ HR 分析师已接入飞书，支持以下功能：
 简历入库 → 自动解析 → 匹配度评分 → 多维表格记录
                                       ↓
                               招聘负责人筛选
-                                      ↓
-                              安排面试 → 创建评估文档
-                                      ↓
-                              面试完成 → 更新记录
-                                      ↓
-                              Offer/拒绝 → 归档
 ```
 
 ---
@@ -170,3 +162,12 @@ HR 分析师已接入飞书，支持以下功能：
 - 在聊天中发送简历或 JD 开始分析
 - 访问多维表格查看和管理所有候选人
 - 使用飞书文档生成评估报告
+
+**输出示例截图**
+<img width="1185" height="1277" alt="屏幕截图 2026-03-12 091557" src="https://github.com/user-attachments/assets/fd434214-ad1b-454a-abea-876a6b3ed84d" />
+<img width="1117" height="1314" alt="屏幕截图 2026-03-12 091621" src="https://github.com/user-attachments/assets/7aae3aa0-c20c-48c4-a52c-34b3dd2611cf" />
+<img width="1067" height="1339" alt="屏幕截图 2026-03-12 092610" src="https://github.com/user-attachments/assets/8fd216c0-dbc4-43a6-a733-132750c75445" />
+<img width="914" height="1305" alt="屏幕截图 2026-03-12 092735" src="https://github.com/user-attachments/assets/9881c58c-d4fd-492c-b598-3afe5e9325a6" />
+<img width="938" height="1438" alt="屏幕截图 2026-03-12 093040" src="https://github.com/user-attachments/assets/99ef43f2-c7ac-4e24-8806-3c2f594233e2" />
+
+
