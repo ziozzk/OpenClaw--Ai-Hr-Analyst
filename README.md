@@ -127,7 +127,6 @@ hr-analyst/
 ├── IDENTITY.md                  # Agent 角色身份定义
 ├── SKILL.md                     # 技能操作规范
 ├── README.md                    # 用户使用指南
-├── GITHUB_README.md             # 项目展示文档
 ├── feishu-integration.md        # 飞书集成详情
 ├── company-config.yaml          # 公司信息配置
 ├── interview-email-guide.md     # 面试通知使用指南
