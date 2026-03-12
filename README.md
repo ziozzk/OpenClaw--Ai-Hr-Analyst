@@ -1,211 +1,212 @@
 # HR Analyst 🤖
 
-> **AI-Powered Recruitment Decision Analyst** — Transform resumes, interviews, and candidate data into structured, actionable insights.
+> **AI 招聘决策分析师** — 将简历、面试记录和候选人数据转化为结构化、可执行的洞察
 
-[![Status](https://img.shields.io/badge/status-active-success)](.)
-[![Platform](https://img.shields.io/badge/platform-Feishu-blue)](.)
-[![Model](https://img.shields.io/badge/model-Qwen3.5--plus-orange)](.)
-[![License](https://img.shields.io/badge/license-internal-lightgrey)](.)
+[![状态](https://img.shields.io/badge/状态 - 运行中-success)](.)
+[![平台](https://img.shields.io/badge/平台 - 飞书-blue)](.)
+[![模型](https://img.shields.io/badge/模型 - 通义千问 3.5--plus-orange)](.)
+[![许可](https://img.shields.io/badge/许可 - 内部使用-lightgrey)](.)
 
 ---
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
 ```bash
-# In Feishu chat
-/analyze_resume [upload PDF]
-/evaluate_match [candidate] [position]
-/compare_candidates [A] [B] [C]
+# 在飞书聊天中
+/分析简历 [上传 PDF]
+/评估匹配度 [候选人] [岗位]
+/对比候选人 [A] [B] [C]
 ```
 
 ---
 
-## ✨ Features
+## ✨ 核心功能
 
-| Feature | Description |
-|---------|-------------|
-| 📄 **Resume Parsing** | Extract structured data from PDF/text resumes |
-| 🎯 **Match Scoring** | Calculate candidate-JD fit (0-100 score) |
-| 📊 **Candidate Comparison** | Multi-candidate comparison matrices |
-| 📝 **Interview Notes** | Convert interview notes into structured evaluations |
-| ⚠️ **Risk Detection** | Flag red flags (job-hopping, gaps, inconsistencies) |
-| 📈 **Feishu Integration** | Auto-sync to Feishu Bitable recruitment tracker |
+| 功能 | 说明 |
+|------|------|
+| 📄 **简历解析** | 从 PDF/文本简历中提取结构化数据 |
+| 🎯 **匹配度评分** | 计算候选人与 JD 的匹配度 (0-100 分) |
+| 📊 **候选人对比** | 多维度候选人对比矩阵 |
+| 📝 **面试整理** | 将面试笔记转化为结构化评估 |
+| ⚠️ **风险识别** | 标记红旗（频繁跳槽、空窗期、信息矛盾） |
+| 📈 **飞书集成** | 自动同步到飞书多维表格招聘管理系统 |
 
 ---
 
-## 📋 Output Examples
+## 📋 输出示例
 
-### Resume Analysis
+### 简历分析
 
 ```markdown
-## Candidate: Zhang San
-## Years of Experience: 5
+## 候选人：张三
+## 工作年限：5 年
 
-### Core Skills
+### 核心技能
 - Python, Go, Kubernetes
-- Microservices Architecture
-- Team Management (3 people)
+- 微服务架构设计
+- 团队管理（3 人）
 
-### Key Achievements
-- Led XX system refactoring, 300% performance improvement
+### 关键成就
+- 主导 XX 系统重构，性能提升 300%
 - ...
 ```
 
-### Match Evaluation
+### 匹配度评估
 
 ```markdown
-## Match Score: 78/100
+## 匹配度：78/100
 
-### Dimension Scores
-| Dimension | Score | Evidence |
-|-----------|-------|----------|
-| Technical Fit | 85/100 | 5yr backend, Go/Python expert |
-| Experience Fit | 75/100 | Microservices exp, limited high-concurrency |
-| Culture Fit | 70/100 | Startup background, adapts to fast pace |
+### 维度评分
+| 维度 | 评分 | 依据 |
+|------|------|------|
+| 技术匹配 | 85/100 | 5 年后端经验，精通 Go/Python |
+| 经验匹配 | 75/100 | 有微服务经验，缺少高并发场景 |
+| 文化契合 | 70/100 | 创业公司背景，适应快节奏 |
 
-### Recommendation: INTERVIEW
-Reason: Core tech match, verify high-concurrency experience in interview
+### 建议：推荐面试
+理由：核心技术匹配，高并发经验可在面试中进一步验证
 ```
 
-### Candidate Comparison
+### 候选人对比
 
 ```markdown
-## Candidate Comparison: Senior Backend Engineer
+## 候选人对比：高级后端工程师
 
-| Dimension | Zhang San | Li Si | Wang Wu |
-|-----------|-----------|-------|---------|
-| Match Score | 78 | 82 | 71 |
-| Years | 5 | 7 | 3 |
-| Tech Stack | ✅ | ✅ | ⚠️ |
-| Management | 1yr | 3yr | 0yr |
-| Expected Salary | 35k | 45k | 28k |
+| 维度 | 张三 | 李四 | 王五 |
+|------|------|------|------|
+| 匹配度 | 78 | 82 | 71 |
+| 工作年限 | 5 年 | 7 年 | 3 年 |
+| 技术栈 | ✅ | ✅ | ⚠️ |
+| 管理经验 | 1 年 | 3 年 | 0 年 |
+| 期望薪资 | 35k | 45k | 28k |
 
-### Ranking
-1. Li Si - Most experienced, highest tech match
-2. Zhang San - Best value, high potential
-3. Wang Wu - Less experience, strong learner
+### 排序建议
+1. 李四 - 经验最丰富，技术匹配度最高
+2. 张三 - 性价比高，潜力好
+3. 王五 - 经验不足，但学习能力强
 ```
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ 系统架构
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     Feishu Bot Interface                     │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│                      飞书 Bot 接口                        │
+└─────────────────────────────────────────────────────────┘
                               │
                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    HR Analyst Agent                          │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │   Resume    │  │    Match    │  │    Interview        │  │
-│  │   Parser    │  │   Scoring   │  │   Normalizer        │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────────┐  │
-│  │  Candidate  │  │    Risk     │  │     Feishu          │  │
-│  │  Comparator │  │   Detector  │  │   Bitable Sync      │  │
-│  └─────────────┘  └─────────────┘  └─────────────────────┘  │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│                    HR Analyst Agent                      │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
+│  │   简历      │  │   匹配度    │  │    面试         │  │
+│  │   解析器    │  │   评分器    │  │   信息整理器    │  │
+│  └─────────────┘  └─────────────┘  └─────────────────┘  │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
+│  │   候选人    │  │    风险     │  │     飞书        │  │
+│  │   对比器    │  │   检测器    │  │   多维表格同步  │  │
+│  └─────────────┘  └─────────────┘  └─────────────────┘  │
+└─────────────────────────────────────────────────────────┘
                               │
                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│              Feishu Bitable (Recruitment CRM)               │
-│  Candidates | Positions | Interviews | Pipeline Tracking    │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────┐
+│              飞书多维表格（招聘 CRM 系统）                  │
+│     候选人库 | 岗位 JD | 面试记录 | 流程看板跟踪          │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 📁 Project Structure
+## 📁 项目结构
 
 ```
 hr-analyst/
-├── IDENTITY.md              # Agent persona definition
-├── SKILL.md                 # Skill specifications
-├── README.md                # User guide
-├── feishu-integration.md    # Feishu integration details
-├── candidates/              # Candidate profiles
-│   └── [Name]_[Date].md
-├── jobs/                    # Job descriptions
-│   └── [Position].md
-├── interviews/              # Interview records
-│   └── [Candidate]_[Round].md
-├── templates/               # Output templates
+├── IDENTITY.md              # Agent 角色身份定义
+├── SKILL.md                 # 技能操作规范
+├── README.md                # 用户使用指南
+├── feishu-integration.md    # 飞书集成详情
+├── GITHUB_README.md         # 项目展示文档
+├── candidates/              # 候选人档案
+│   └── [姓名]_[日期].md
+├── jobs/                    # 岗位 JD
+│   └── [岗位名称].md
+├── interviews/              # 面试记录
+│   └── [候选人]_[轮次].md
+├── templates/               # 输出模板
 │   └── evaluation-template.md
-└── tools/                   # Custom tools
+└── tools/                   # 自定义工具
     └── resume-parser.py
 ```
 
 ---
 
-## 🔧 Configuration
+## 🔧 配置说明
 
-### Scoring Standards
+### 评分标准
 
-| Score Range | Meaning | Action |
-|-------------|---------|--------|
-| 90-100 | Perfect Match | Strong recommend, priority hire |
-| 80-89 | High Match | Recommend, proceed to next round |
-| 70-79 | Basic Match | On fence, needs verification |
-| 60-69 | Partial Match | Caution, clear gaps |
-| <60 | No Match | Not recommended |
+| 分数段 | 含义 | 建议 |
+|--------|------|------|
+| 90-100 | 完美匹配 | 强烈推荐，优先录用 |
+| 80-89 | 高度匹配 | 推荐，进入下一轮 |
+| 70-79 | 基本匹配 | 待定，需进一步验证 |
+| 60-69 | 部分匹配 | 谨慎考虑，有明显差距 |
+| <60 | 不匹配 | 不推荐 |
 
-### Risk Flags
+### 风险标记
 
-| Level | Indicators |
-|-------|------------|
-| 🔴 **High** | Job-hopping (<1yr × 3), resume contradictions, suspected fraud |
-| 🟡 **Medium** | Gap >6 months, career change, skill gaps |
-| 🟢 **Low** | Stable history, consistent info, skill match |
-
----
-
-## 🔗 Feishu Integration
-
-### Bitable: HR Recruitment Management System
-
-**URL:** https://ncn4ofoyn7ep.feishu.cn/base/HDUTbF0REasLZssSDtscvwxenDh
-
-**Tables:**
-- `candidates` - Candidate database with status tracking
-- `positions` - Job descriptions and requirements
-- `interviews` - Interview records and evaluations
-
-**Fields:**
-| Field | Type | Description |
-|-------|------|-------------|
-| 候选人姓名 | Text | Primary key |
-| 应聘岗位 | SingleSelect | Position |
-| 当前状态 | SingleSelect | Pending/Interview/Offer/Rejected/Archived |
-| 匹配度评分 | Number | 0-100 score |
-| 工作年限 | Number | Years of experience |
-| 优势标签 | MultiSelect | Tech-strong/Experienced/Good-communication/High-potential |
-| 风险标签 | MultiSelect | Job-hopping/Gap/Career-change |
-
-### Automation
-
-```
-Resume Received → Auto-parse → Score → Bitable Record
-                                              ↓
-                                    Recruiter Review
-                                              ↓
-                                    Schedule Interview → Create Eval Doc
-                                              ↓
-                                    Interview Complete → Update Status
-                                              ↓
-                                    Offer/Reject → Archive
-```
+| 等级 | 指标 |
+|------|------|
+| 🔴 **高风险** | 频繁跳槽（<1 年×3 次）、简历矛盾、信息造假嫌疑 |
+| 🟡 **中风险** | 空窗期>6 个月、跨行业、技能与岗位有差距 |
+| 🟢 **低风险** | 履历稳定、信息一致、技能匹配 |
 
 ---
 
-## 💡 Usage Examples
+## 🔗 飞书集成
 
-### Analyze a Resume
+### 多维表格：HR 招聘管理系统
+
+**链接：** https://ncn4ofoyn7ep.feishu.cn/base/HDUTbF0REasLZssSDtscvwxenDh
+
+**数据表：**
+- `candidates` - 候选人数据库，状态跟踪
+- `positions` - 岗位 JD 和要求
+- `interviews` - 面试记录和评估
+
+**字段说明：**
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| 候选人姓名 | 文本 | 主键 |
+| 应聘岗位 | 单选 | 岗位名称 |
+| 当前状态 | 单选 | 待筛选/面试中/已录用/已拒绝/已归档 |
+| 匹配度评分 | 数字 | 0-100 分 |
+| 工作年限 | 数字 | 工作年限 |
+| 优势标签 | 多选 | 技术强/经验丰富/沟通好/潜力大 |
+| 风险标签 | 多选 | 频繁跳槽/空窗期/跨行业 |
+
+### 自动化流程
 
 ```
-User: 分析这份简历
-[Upload resume PDF]
+收到简历 → 自动解析 → 匹配度评分 → 录入多维表格
+                                              ↓
+                                    招聘负责人筛选
+                                              ↓
+                                    安排面试 → 创建评估文档
+                                              ↓
+                                    面试完成 → 更新状态
+                                              ↓
+                                    Offer/拒绝 → 归档
+```
+
+---
+
+## 💡 使用示例
+
+### 示例 1：分析简历
+
+```
+用户：分析这份简历
+[上传简历 PDF]
 
 HR Analyst:
 ## 候选人：李悦
@@ -226,10 +227,10 @@ HR Analyst:
 - 抖音账号：累计曝光 100 万+
 ```
 
-### Evaluate Match
+### 示例 2：评估匹配度
 
 ```
-User: 评估李悦跟新媒体运营专员岗位的匹配度
+用户：评估李悦跟新媒体运营专员岗位的匹配度
 
 HR Analyst:
 ## 匹配度：82/100
@@ -245,10 +246,10 @@ HR Analyst:
 理由：专业对口，技能齐全，校园项目数据亮眼
 ```
 
-### Compare Candidates
+### 示例 3：对比候选人
 
 ```
-User: 对比李悦、张伟、陈琳三个候选人
+用户：对比李悦、张伟、陈琳三个候选人
 
 HR Analyst:
 ## 候选人对比：新媒体运营
@@ -261,56 +262,56 @@ HR Analyst:
 | 粉丝增长 | 1.3 万 | 5 万 | 25 万 |
 | 管理能力 | 无 | 无 | 1 人指导经验 |
 
-### Ranking
-1. **陈琳** - 经验最丰富，矩阵运营能力强，有变现经验
-2. **张伟** - 性价比好，1 年实战，数据驱动思维
-3. **李悦** - 应届生潜力好，成本低，需培养
+### 排序建议
+1. 陈琳 - 经验最丰富，矩阵运营能力强，有变现经验
+2. 张伟 - 性价比好，1 年实战，数据驱动思维
+3. 李悦 - 应届生潜力好，成本低，需培养
 ```
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ 技术栈
 
-| Component | Technology |
-|-----------|------------|
-| **Runtime** | OpenClaw Agent Framework |
-| **Model** | Qwen3.5-plus (1M context) |
-| **Platform** | Feishu (Lark) Bot |
-| **Database** | Feishu Bitable |
-| **Documents** | Feishu Docs |
-| **PDF Processing** | pdfplumber, reportlab |
-
----
-
-## 📊 Performance Metrics
-
-| Metric | Value |
-|--------|-------|
-| Resume Parse Time | ~3-5 seconds |
-| Match Score Accuracy | ~85% (vs human recruiter) |
-| Candidates Processed | 50+ |
-| Integration Uptime | 99.5% |
+| 组件 | 技术 |
+|------|------|
+| **运行框架** | OpenClaw Agent Framework |
+| **大模型** | 通义千问 3.5-plus (100 万上下文) |
+| **平台** | 飞书 (Lark) Bot |
+| **数据库** | 飞书多维表格 (Bitable) |
+| **文档** | 飞书文档 (Docs) |
+| **PDF 处理** | pdfplumber, reportlab |
 
 ---
 
-## 🔐 Security & Privacy
+## 📊 性能指标
 
-- ✅ All data stored in Feishu enterprise cloud
-- ✅ No external API calls for candidate data
-- ✅ Access controlled via Feishu permissions
-- ✅ Gateway authentication with token-based auth
-
----
-
-## 🤝 Contributing
-
-This is an internal tool. For questions or feature requests, contact the development team.
+| 指标 | 数值 |
+|------|------|
+| 简历解析时间 | ~3-5 秒 |
+| 匹配度准确率 | ~85%（相比人工招聘官） |
+| 处理候选人数量 | 50+ |
+| 集成可用性 | 99.5% |
 
 ---
 
-## 📝 License
+## 🔐 安全与隐私
 
-Internal use only. Not for external distribution.
+- ✅ 所有数据存储于飞书企业云
+- ✅ 候选人数据无外部 API 调用
+- ✅ 通过飞书权限系统控制访问
+- ✅ Gateway 基于 Token 的身份认证
+
+---
+
+## 🤝 贡献指南
+
+本项目为内部工具。如有问题或功能需求，请联系开发团队。
+
+---
+
+## 📝 许可
+
+内部使用，禁止外传。
 
 ---
 
