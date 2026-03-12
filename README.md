@@ -422,4 +422,13 @@ HR 团队:
 ---
 
 
-**Built with ❤️ by OpenClaw**
+**实际运行**
+<img width="1185" height="1277" alt="屏幕截图 2026-03-12 091557" src="https://github.com/user-attachments/assets/7bfa73fd-23c6-49bd-bf81-c5a7549b4584" />
+<img width="1067" height="1339" alt="屏幕截图 2026-03-12 092610" src="https://github.com/user-attachments/assets/e5b9ebca-51fb-4b1d-8cd2-b7b64dd728b2" />
+<img width="1232" height="1150" alt="屏幕截图 2026-03-12 092621" src="https://github.com/user-attachments/assets/02c2c946-6baa-4666-9169-288b47be5ca1" />
+<img width="908" height="886" alt="屏幕截图 2026-03-12 092715" src="https://github.com/user-attachments/assets/f3cd8b3f-1c59-47c1-ad9a-8a6c7867eab9" />
+<img width="914" height="1305" alt="屏幕截图 2026-03-12 092735" src="https://github.com/user-attachments/assets/ae4cefa3-bf7c-4f7f-96fa-e0d34de7423b" />
+<img width="938" height="1438" alt="屏幕截图 2026-03-12 093040" src="https://github.com/user-attachments/assets/cfbb5991-4f2f-44f3-8659-3caabae4a534" />
+<img width="1580" height="910" alt="屏幕截图 2026-03-12 140335" src="https://github.com/user-attachments/assets/80083c13-c792-439a-a2a2-826644fb4a9e" />
+<img width="1546" height="1359" alt="屏幕截图 2026-03-12 141545" src="https://github.com/user-attachments/assets/7d002a5e-f7f0-42fa-863d-dfd7525092aa" />
+
