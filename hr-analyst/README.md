@@ -167,6 +167,7 @@ HR 分析师已接入飞书，支持以下功能：
 <img width="1185" height="1277" alt="屏幕截图 2026-03-12 091557" src="https://github.com/user-attachments/assets/fd434214-ad1b-454a-abea-876a6b3ed84d" />
 <img width="1117" height="1314" alt="屏幕截图 2026-03-12 091621" src="https://github.com/user-attachments/assets/7aae3aa0-c20c-48c4-a52c-34b3dd2611cf" />
 <img width="1067" height="1339" alt="屏幕截图 2026-03-12 092610" src="https://github.com/user-attachments/assets/8fd216c0-dbc4-43a6-a733-132750c75445" />
+<img width="908" height="886" alt="屏幕截图 2026-03-12 092715" src="https://github.com/user-attachments/assets/c88a920b-481a-4a76-acc1-4dd3361cf02a" />
 <img width="914" height="1305" alt="屏幕截图 2026-03-12 092735" src="https://github.com/user-attachments/assets/9881c58c-d4fd-492c-b598-3afe5e9325a6" />
 <img width="938" height="1438" alt="屏幕截图 2026-03-12 093040" src="https://github.com/user-attachments/assets/99ef43f2-c7ac-4e24-8806-3c2f594233e2" />
 
