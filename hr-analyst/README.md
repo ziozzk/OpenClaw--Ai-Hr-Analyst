@@ -2,6 +2,8 @@
 
 ## 快速开始
 
+<img width="1185" height="1277" alt="屏幕截图 2026-03-12 091557" src="https://github.com/user-attachments/assets/e7c7ee1d-24d2-4177-8e87-abb1a3601a43" />
+
 这是一个专门支持招聘决策的 AI 分析师系统。
 
 ### 核心功能
